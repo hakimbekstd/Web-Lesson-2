@@ -1,12 +1,9 @@
 import 'dart:math';
 
 void main() {
-  List list = [6,6,6,5,3,2];
+  List list = [1,1,0];
   int i=0;
-  while (true) {
-    i++;
-    print(i);
-  }
+  print(yechim3(list));
   
 
 }
