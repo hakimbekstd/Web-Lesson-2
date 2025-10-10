@@ -1,10 +1,8 @@
 import 'dart:math';
 
 void main() {
-  List list = [1,1,0];
-  int i=0;
-  print(yechim3(list));
-  
+ 
+  print(yechim3([1,1,5,4,3,2,1]));
 
 }
 
@@ -13,19 +11,16 @@ bool yechim3(List list) {
   if(list.length<3 || list[0]>list[1]) return false;
   bool one = true;
   bool two = false;
-
   for(int i=0;i<list.length-1;i++) {
     if(list[i]<list[i+1]) {
       one = true;
     }
-
     if(one && two) return false;
     if(list[i]>list[i+1]) {
       two = true;
       one = false;
     }
   }
-
   return (one==false && two);
 }
 
